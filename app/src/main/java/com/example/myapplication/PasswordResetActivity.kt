@@ -37,8 +37,8 @@ class PasswordResetActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
             FirebaseAuth.getInstance().sendPasswordResetEmail(email)
-                .addOnCompleteListener { burnuta ->
-                    if (burnuta.isSuccessful){
+                .addOnCompleteListener { task ->
+                    if (task.isSuccessful){
                         Toast.makeText(this, "Check email", Toast.LENGTH_SHORT).show()
                     }else{
                         Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show()

@@ -39,7 +39,7 @@ class PasswordChangeActivity : AppCompatActivity() {
                 ?.updatePassword(newPassword)
                 ?.addOnCompleteListener { task ->
                     if (task.isSuccessful){
-                        Toast.makeText(this, "Success!", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "პაროლი წარმატებით შეიცვალა!", Toast.LENGTH_SHORT).show()
                     }else{
                         Toast.makeText(this, "Error!", Toast.LENGTH_SHORT).show()
                     }

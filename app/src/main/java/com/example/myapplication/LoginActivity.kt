@@ -58,7 +58,7 @@ class LoginActivity : AppCompatActivity() {
             val password = editTextPassword.text.toString()
 
             if (email.isEmpty() || password.isEmpty()){
-                Toast.makeText(this, "Empty!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "შეიყვანეთ ემაილი და პაროლი!", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
             FirebaseAuth.getInstance()
